@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+		form {
+			width: 50%;
+			margin: 0 auto;
+			float: left;
+		}
+		input[type="text"], input[type="email"], select, textarea {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			float: left;
+		}
+		input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+		button[type="submit"] {
+            transition: transform 0.2s ease-in-out;
+    }
+
+        button[type="submit"]:hover {
+          transform: scale(1.1);
+        }
+		@media screen and (max-width: 600px) {
+			form {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+    <main class="main-content">
+        <section class="left-section">
+            <div class="left-content">
+                <div class="profile">
+                    <div class="image">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="./images/headshot.png">
+                            <source media="(min-width: 480px)" srcset="./images/headshot.png">
+                            <img src="./images/headshot.png" alt="Christopher">
+                        </picture>
+                    </div>
+                    <h2 class="name">Lorem Dola Ipsum</h2>
+                    <p class="career">Software Engineer</p>
+                </div>
+                <div class="contact-info">
+                    <h3 class="main-title">Contact Info</h3>
+                    <ul>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            07661892982
+                        </li>
+
+
+                        <li>
+                            <i class="fa fa-facebook"></i>
+                            www.facebook.com/lorem
+                        </li>
+                        <li>
+                            <i class="fa fa-instagram"></i>
+                            @loremipsum
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="skills-section">
+                    <h3 class="main-title">Skills</h3>
+                    <ul>
+                        <li>
+                            <p class="skill-title">Javascript</p>
+                        </li>
+                        <li>
+                            <p class="skill-title">Photoshop</p>
+
+
+                        </li>
+
+
+
+                        <li>
+                            <p class="skill-title">Node js</p>
+
+                        </li>
+                        <li>
+                            <p class="skill-title">html/css</p>
+
+                        </li>
+
+                        <li>
+                            <p class="skill-title">Wordpress</p>
+
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <section class="right-section">
+            <div class="right-main-content">
+                <section class="about sect">
+                    <h2 class="right-title">About Me</h2>
+                    <p class="para">
+                        ITW TO WEB
+                    </p>
+                </section>
+
+                <section class="experince sect">
+                    <h2 class="right-title">Experience</h2>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">Freelance Gig</h5>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <h5 class="tl-title-2">Junior Developer</h5>
+                                <p class="para">
+                                    Had to make a website for one of my clients who didn't have a set out design for their own establishment.
+                                    I scoured GitHub to get inspiration for the design layout ,found this neat single page website with React and wanted to challenge myself to turn it into a multipage website using NextJs
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </section>
+                <section class="education sect">
+                    <h2 class="right-title">education</h2>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">CodeSpace Bootcamp</h5>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <h5 class="tl-title-2">JS Developer </h5>
+                                <p class="para">
+                                    Very Insightful course
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="awards sect">
+                    <h2 class="right-title">Contact</h2>
+                        <form action="https://formsubmit.co/christopher.swiftlybox@gmail.com" method="POST">
+                    		<label for="name">Name:</label>
+                    		<input type="text" id="name" name="name" placeholder="Enter your name">
+
+                    		<label for="email">Email:</label>
+                    		<input type="email" id="email" name="email" placeholder="Enter your email">
+
+                    		<label for="subject">Subject:</label>
+                    		<select id="subject" name="subject">
+                    			<option value="general">General Inquiry</option>
+                    			<option value="feedback">Feedback</option>
+                    			<option value="support">Technical Support</option>
+                    		</select>
+
+                    		<label for="message">Message:</label>
+                    		<textarea id="message" name="message" placeholder="Enter your message"></textarea>
+
+                    		<input type="submit" value="Submit" style="transition: transform 0.2s ease-in-out;"
+                            onmouseover="this.style.transform='scale(1.1)'"
+                            onmouseout="this.style.transform='scale(1)'">
+                    	</form>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
